@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vũ Xuân Trường — Software Engineer</title>
+  <meta name="description" content="Vũ Xuân Trường — Kỹ sư phần mềm: thiết kế web & app (bán hàng, ERP, CRM), thiết kế logo trên Figma và giải pháp AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 40 40%27%3E%3Crect width=%2740%27 height=%2740%27 rx=%2710%27 fill=%27%23d9c4aa%27/%3E%3Cpath d=%27M11 11h18M12.5 16 20 26.5 27.5 16M20 26.5 14.5 32M20 26.5 25.5 32%27 fill=%27none%27 stroke=%27%230b0b0b%27 stroke-width=%273.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="VXT — Vũ Xuân Trường">
+        <svg class="logo__icon" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" class="logo__bg"/><path d="M11 11h18" class="logo__stroke"/><path d="M12.5 16 20 26.5 27.5 16" class="logo__stroke"/><path d="M20 26.5 14.5 32M20 26.5 25.5 32" class="logo__stroke logo__stroke--soft"/></svg>
+        <span class="logo__word">VXT</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav.about">Giới thiệu</a>
+        <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+        <a href="#projects" data-i18n="nav.projects">Dự án</a>
+        <a href="#process" data-i18n="nav.process">Quy trình</a>
+        <a href="#contact" class="btn btn--sm" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
+          <button type="button" class="lang__btn is-active" data-lang="vi" aria-pressed="true">VI</button>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang__thumb" aria-hidden="true"></span>
+        </div>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Software Engineer · UI Designer · AI</p>
+          <h1 class="hero__title reveal">Vũ Xuân<br /><span>Trường</span></h1>
+          <p class="hero__lead reveal" data-i18n="hero.lead">
+            Kỹ sư phần mềm xây dựng website, ứng dụng và hệ thống quản trị doanh nghiệp — từ bán hàng,
+            ERP đến CRM. Tôi kết hợp tư duy thiết kế trên Figma với sức mạnh của AI để tạo ra những sản
+            phẩm vừa đẹp, vừa vận hành hiệu quả.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#projects" class="btn" data-i18n="hero.cta1">Xem dự án</a>
+            <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Bắt đầu dự án</a>
+          </div>
+          <p class="hero__note reveal" data-i18n="hero.note">Hà Nội, Việt Nam — Sẵn sàng nhận dự án mới</p>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__frame">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+                 alt="Màn hình laptop hiển thị mã nguồn" />
+          </div>
+          <div class="code-card" aria-hidden="true">
+            <div class="code-card__bar"><i></i><i></i><i></i><span>truong.ts</span></div>
+<pre><code><b>const</b> engineer = {
+  name: <s>"Vũ Xuân Trường"</s>,
+  stack: [<s>"React"</s>, <s>"Node"</s>, <s>"AI"</s>],
+  build: () =&gt; <s>"ERP · CRM · POS"</s>,
+};<span class="caret"></span></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats">
+          <li class="reveal"><strong data-count="40" data-suffix="+">0</strong><span data-i18n="stats.1">Dự án hoàn thành</span></li>
+          <li class="reveal"><strong data-count="25" data-suffix="+">0</strong><span data-i18n="stats.2">Khách hàng doanh nghiệp</span></li>
+          <li class="reveal"><strong data-count="60" data-suffix="+">0</strong><span data-i18n="stats.3">Logo &amp; bộ nhận diện</span></li>
+          <li class="reveal"><strong data-count="99" data-suffix="%">0</strong><span data-i18n="stats.4">Đúng tiến độ bàn giao</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__images reveal">
+          <img class="about__img about__img--a"
+               src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=900&q=80"
+               alt="Không gian làm việc lập trình" loading="lazy" />
+          <img class="about__img about__img--b"
+               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=900&q=80"
+               alt="Laptop phát sáng trong bóng tối" loading="lazy" />
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow reveal" data-i18n="about.eyebrow">01 — Về bản thân</p>
+          <h2 class="section__title reveal" data-i18n="about.title">Viết code có tâm, thiết kế có hồn</h2>
+          <p class="reveal" data-i18n="about.p1">
+            Tôi là kỹ sư phần mềm tại Hà Nội, tập trung vào các giải pháp số cho doanh nghiệp vừa và nhỏ:
+            website bán hàng, ứng dụng di động, hệ thống ERP quản lý kho – nhân sự – tài chính và CRM
+            chăm sóc khách hàng.
+          </p>
+          <p class="reveal" data-i18n="about.p2">
+            Bên cạnh lập trình, tôi thiết kế giao diện và logo trên Figma, đồng thời ứng dụng AI
+            (chatbot, tự động hoá, phân tích dữ liệu) để giúp doanh nghiệp tiết kiệm thời gian và tăng doanh thu.
+          </p>
+
+          <ul class="skills">
+            <li class="reveal">
+              <h3>Frontend</h3>
+              <p>React · Next.js · Vue · TypeScript · Tailwind</p>
+            </li>
+            <li class="reveal">
+              <h3>Backend</h3>
+              <p>Node.js · NestJS · .NET · PostgreSQL · MongoDB</p>
+            </li>
+            <li class="reveal">
+              <h3>Mobile</h3>
+              <p>React Native · Flutter</p>
+            </li>
+            <li class="reveal">
+              <h3>Design &amp; AI</h3>
+              <p>Figma · OpenAI · Claude · LangChain · RAG</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="mission">
+      <div class="mission__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1800&q=80" alt="" loading="lazy" />
+      </div>
+      <div class="container mission__inner">
+        <p class="eyebrow reveal" data-i18n="mission.eyebrow">Sứ mệnh</p>
+        <blockquote class="mission__quote reveal" data-i18n="mission.quote">
+          “Biến <em>quy trình</em> phức tạp thành <em>phần mềm</em> đơn giản.”
+        </blockquote>
+        <p class="mission__sub reveal" data-i18n="mission.sub">
+          Mỗi dòng code đều hướng tới một mục tiêu: giúp doanh nghiệp vận hành nhanh hơn, gọn hơn và thông minh hơn.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal" data-i18n="services.eyebrow">02 — Dịch vụ</p>
+          <h2 class="section__title reveal" data-i18n="services.title">Dịch vụ tôi cung cấp</h2>
+        </div>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__img">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+                   alt="Dashboard quản trị dữ liệu" loading="lazy" />
+            </div>
+            <span class="service__num">01.</span>
+            <h3 data-i18n="s1.title">Thiết kế Web &amp; App</h3>
+            <p data-i18n="s1.desc">Website và ứng dụng di động theo yêu cầu, tối ưu tốc độ, SEO và trải nghiệm người dùng.</p>
+            <ul class="service__list">
+              <li data-i18n="s1.l1">Website &amp; app bán hàng</li>
+              <li data-i18n="s1.l2">Hệ thống ERP doanh nghiệp</li>
+              <li data-i18n="s1.l3">Phần mềm CRM khách hàng</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__img">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80"
+                   alt="Thiết kế bảng màu và nhận diện" loading="lazy" />
+            </div>
+            <span class="service__num">02.</span>
+            <h3 data-i18n="s2.title">Thiết kế Logo (Figma)</h3>
+            <p data-i18n="s2.desc">Logo và bộ nhận diện thương hiệu tối giản, hiện đại — bàn giao file Figma, SVG, PNG.</p>
+            <ul class="service__list">
+              <li data-i18n="s2.l1">Logo &amp; brand guideline</li>
+              <li data-i18n="s2.l2">UI/UX, wireframe, prototype</li>
+              <li data-i18n="s2.l3">Design system trên Figma</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__img">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                   alt="Trí tuệ nhân tạo" loading="lazy" />
+            </div>
+            <span class="service__num">03.</span>
+            <h3 data-i18n="s3.title">Giải pháp AI</h3>
+            <p data-i18n="s3.desc">Tích hợp trí tuệ nhân tạo vào sản phẩm và quy trình để tự động hoá công việc lặp lại.</p>
+            <ul class="service__list">
+              <li data-i18n="s3.l1">Chatbot tư vấn &amp; CSKH 24/7</li>
+              <li data-i18n="s3.l2">Tự động hoá quy trình</li>
+              <li data-i18n="s3.l3">Trợ lý AI trên dữ liệu nội bộ</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+
+        <!-- 01 Web & App -->
+        <div class="project">
+          <div class="project__info">
+            <p class="eyebrow reveal" data-i18n="projects.eyebrow">Dự án nổi bật</p>
+            <h2 class="project__title reveal"><span>01.</span><b data-i18n="p1.title">Hệ thống bán hàng<br />&amp; ERP</b></h2>
+            <p class="reveal" data-i18n="p1.desc">
+              Nền tảng quản lý chuỗi cửa hàng: bán hàng tại quầy (POS), website thương mại điện tử,
+              quản lý kho, nhân sự và báo cáo doanh thu theo thời gian thực.
+            </p>
+            <ul class="tags reveal">
+              <li>Next.js</li><li>NestJS</li><li>PostgreSQL</li><li>POS · ERP</li>
+            </ul>
+          </div>
+          <div class="gallery gallery--feature reveal">
+            <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1200&q=80" alt="Bán hàng tại quầy bằng máy tính bảng" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Báo cáo doanh thu trên laptop" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 02 CRM + App -->
+        <div class="project project--reverse">
+          <div class="project__info">
+            <h2 class="project__title reveal"><span>02.</span><b data-i18n="p2.title">CRM &amp;<br />Mobile App</b></h2>
+            <p class="reveal" data-i18n="p2.desc">
+              Phần mềm CRM quản lý khách hàng, cơ hội bán hàng và chăm sóc sau bán, đồng bộ với ứng dụng
+              di động cho đội ngũ sale làm việc mọi lúc mọi nơi.
+            </p>
+            <ul class="tags reveal">
+              <li>React</li><li>React Native</li><li>Node.js</li><li>CRM</li>
+            </ul>
+          </div>
+          <div class="gallery gallery--two reveal">
+            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?auto=format&fit=crop&w=900&q=80" alt="Dashboard CRM trên laptop" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80" alt="Ứng dụng trên điện thoại và laptop" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- 03 Logo -->
+        <div class="project">
+          <div class="project__info">
+            <h2 class="project__title reveal"><span>03.</span><b data-i18n="p3.title">Logo &amp;<br />Nhận diện</b></h2>
+            <p class="reveal" data-i18n="p3.desc">
+              Bộ sưu tập logo thiết kế trên Figma cho các thương hiệu công nghệ, F&amp;B và bán lẻ —
+              đơn giản, dễ nhớ và hiển thị tốt trên mọi kích thước.
+            </p>
+            <ul class="tags reveal">
+              <li>Figma</li><li>Brand Identity</li><li>SVG</li>
+            </ul>
+          </div>
+          <div class="logos reveal">
+            <figure class="logo-tile logo-tile--a">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><rect x="22" y="22" width="76" height="76" rx="20" fill="none" stroke="currentColor" stroke-width="6"/><path d="M42 60l14 14 24-28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <figcaption>b.01 — TaskFlow</figcaption>
+            </figure>
+            <figure class="logo-tile logo-tile--b">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="36" fill="none" stroke="currentColor" stroke-width="6"/><path d="M60 24c-14 20-14 52 0 72M60 24c14 20 14 52 0 72M26 60h68" fill="none" stroke="currentColor" stroke-width="5"/></svg>
+              <figcaption>b.02 — GlobeMart</figcaption>
+            </figure>
+            <figure class="logo-tile logo-tile--c">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M30 86V34l30 30 30-30v52" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <figcaption>b.03 — Mocha Café</figcaption>
+            </figure>
+            <figure class="logo-tile logo-tile--d">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 22l34 19v38L60 98 26 79V41z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><circle cx="60" cy="60" r="11" fill="currentColor"/></svg>
+              <figcaption>b.04 — NeuroAI</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 04 AI -->
+        <div class="project project--reverse">
+          <div class="project__info">
+            <h2 class="project__title reveal"><span>04.</span><b data-i18n="p4.title">Trợ lý AI<br />doanh nghiệp</b></h2>
+            <p class="reveal" data-i18n="p4.desc">
+              Chatbot AI trả lời khách hàng trên website và Zalo, kết nối trực tiếp dữ liệu sản phẩm và
+              đơn hàng — giảm 70% khối lượng công việc của bộ phận chăm sóc khách hàng.
+            </p>
+            <ul class="tags reveal">
+              <li>LLM</li><li>RAG</li><li>Python</li><li>Automation</li>
+            </ul>
+          </div>
+          <div class="gallery gallery--two reveal">
+            <img src="https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=900&q=80" alt="Ứng dụng AI trên điện thoại" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80" alt="Robot AI" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <section class="tools">
+      <div class="marquee" aria-label="Tech stack">
+        <div class="marquee__track">
+          <span>React</span><i>✦</i><span>Next.js</span><i>✦</i><span>Node.js</span><i>✦</i><span>TypeScript</span><i>✦</i>
+          <span>Flutter</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Figma</span><i>✦</i><span>OpenAI</span><i>✦</i>
+          <span aria-hidden="true">React</span><i>✦</i><span aria-hidden="true">Next.js</span><i>✦</i><span aria-hidden="true">Node.js</span><i>✦</i><span aria-hidden="true">TypeScript</span><i>✦</i>
+          <span aria-hidden="true">Flutter</span><i>✦</i><span aria-hidden="true">PostgreSQL</span><i>✦</i><span aria-hidden="true">Figma</span><i>✦</i><span aria-hidden="true">OpenAI</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal" data-i18n="process.eyebrow">03 — Quy trình</p>
+          <h2 class="section__title reveal" data-i18n="process.title">Từ ý tưởng đến sản phẩm</h2>
+        </div>
+        <ol class="process">
+          <li class="reveal"><span>01</span><h3 data-i18n="pr1.t">Phân tích yêu cầu</h3><p data-i18n="pr1.d">Tìm hiểu nghiệp vụ, mục tiêu kinh doanh và thống nhất phạm vi, ngân sách.</p></li>
+          <li class="reveal"><span>02</span><h3 data-i18n="pr2.t">Thiết kế UI/UX</h3><p data-i18n="pr2.d">Wireframe và prototype trên Figma, duyệt giao diện trước khi lập trình.</p></li>
+          <li class="reveal"><span>03</span><h3 data-i18n="pr3.t">Phát triển &amp; kiểm thử</h3><p data-i18n="pr3.d">Lập trình theo sprint, demo định kỳ, kiểm thử kỹ lưỡng từng tính năng.</p></li>
+          <li class="reveal"><span>04</span><h3 data-i18n="pr4.t">Bàn giao &amp; bảo trì</h3><p data-i18n="pr4.d">Triển khai, hướng dẫn sử dụng và đồng hành hỗ trợ sau bàn giao.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div>
+          <p class="eyebrow reveal" data-i18n="contact.eyebrow">04 — Liên hệ</p>
+          <h2 class="contact__title reveal" data-i18n="contact.title">Thông tin<br />liên hệ</h2>
+          <p class="reveal contact__lead" data-i18n="contact.lead">Bạn đang có ý tưởng cho website, ứng dụng hay giải pháp AI? Hãy gọi điện hoặc gửi email — tôi sẽ phản hồi trong vòng 24 giờ.</p>
+          <div class="hero__cta contact__cta reveal">
+            <a href="tel:+84397186546" class="btn" data-i18n="contact.call">Gọi ngay</a>
+            <a href="mailto:truongept2003@gmail.com" class="btn btn--ghost" data-i18n="contact.mail">Gửi email</a>
+          </div>
+        </div>
+
+        <dl class="contact__list contact__cards">
+          <div class="reveal"><dt data-i18n="contact.address">Địa chỉ</dt><dd data-i18n="contact.city">Hà Nội, Việt Nam</dd></div>
+          <div class="reveal"><dt data-i18n="contact.phone">Điện thoại</dt><dd><a href="tel:+84397186546">0397 186 546</a></dd></div>
+          <div class="reveal"><dt>Email</dt><dd><a href="mailto:truongept2003@gmail.com">truongept2003@gmail.com</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__icon" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" class="logo__bg"/><path d="M11 11h18" class="logo__stroke"/><path d="M12.5 16 20 26.5 27.5 16" class="logo__stroke"/><path d="M20 26.5 14.5 32M20 26.5 25.5 32" class="logo__stroke logo__stroke--soft"/></svg>
+        <span class="logo__word">VXT</span>
+      </a>
+      <p>© <span id="year">2026</span> Vũ Xuân Trường. <span data-i18n="footer.text">Kỹ sư phần mềm · Hà Nội.</span></p>
+      <a href="#top" class="footer__top" data-i18n="footer.top">Lên đầu trang ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
